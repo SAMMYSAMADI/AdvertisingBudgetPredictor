@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Budget Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Optimized Budget Results</h1>
+        <p><strong>Predicted Total Budget:</strong> {{ optimized_budget['Predicted Total Budget'] }}</p>
+        <p><strong>Awareness Budget:</strong> {{ optimized_budget['Awareness Budget'] }}</p>
+        <p><strong>Consideration Budget:</strong> {{ optimized_budget['Consideration Budget'] }}</p>
+        <p><strong>Conversion Budget:</strong> {{ optimized_budget['Conversion Budget'] }}</p>
+        <p><strong>Most Frequent Marketing Channel:</strong> {{ optimized_budget['Most Frequent Marketing Channel'] }}</p>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
